@@ -1,0 +1,102 @@
+.background {
+    display: flex;
+    height: 1024px;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://images.unsplash.com/photo-1463725876303-ff840e2aa8d5?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .background .rectangle {
+    position: center;
+    width: 520px;
+    height: 604px;
+    top: 0;
+    left: 0;
+    background-color: #fefefe8c;
+    border-radius: 16px;
+    border: 1px solid;
+    border-color: #ffffff03;
+    backdrop-filter: blur(16.2px) brightness(100%);
+    -webkit-backdrop-filter: blur(16.2px) brightness(100%);
+  }
+  
+  .background .text-wrapper {
+    position: absolute;
+    top: 43px;
+    left: 200px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 40.8px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .background .frame {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 41px;
+    position: absolute;
+    top: 134px;
+    left: 50px;
+  }
+  
+  .background .group {
+    position: relative;
+    width: 422px;
+    height: 57px;
+    margin-right: -2px;
+  }
+  
+  .background .overlap-group {
+    position: relative;
+    width: 420px;
+    height: 57px;
+    background-color: #f92828;
+    border-radius: 10px;
+  }
+  
+  .background .div {
+    position: absolute;
+    top: 19px;
+    left: 36px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #bdbdbd;
+    font-size: 16.2px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .background .text-wrapper-2 {
+    position: absolute;
+    top: 18px;
+    left: 36px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #bdbdbd;
+    font-size: 16.2px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+
+  .background .group input{
+    
+    position: relative;
+    width: 403px;
+    height: 57px;
+    border: none;
+    outline: none;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #545454;
+    font-size: 17px;
+    letter-spacing: 0;
+    line-height: normal;
+    padding-left: 4%;
+    border-radius: 10px;
+  }
+  
