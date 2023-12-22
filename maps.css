@@ -191,7 +191,7 @@ body {
   background: #1a8fdd;
   color: white;
   border-radius: 5px;
-    border: none;
+  border: none;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -226,12 +226,10 @@ body {
 
 .modal-content .rating {
     color: #f6931e;
-    margin-bottom: 5px;
   }
   
   .modal-content .price {
     font-weight: bold;
-    margin-bottom: 5px;
   }
 /* The Close Button */
 .close {
