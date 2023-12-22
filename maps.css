@@ -158,6 +158,13 @@ body {
   align-items: center;
 }
 
+.pemesanan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 .info-budaya > h2 {
   font-size: 2rem;
   font-weight: 700;
