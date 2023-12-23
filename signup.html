@@ -2,7 +2,16 @@
 <html lang="en">
   <head>
     <!-- Design by foolishdeveloper.com -->
-    <title>LogIn</title>
+    <title>Glassmorphism login Form Tutorial in html css</title>
+
+    <!-- <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="maps.css" /> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -27,17 +36,18 @@
         background-repeat: no-repeat;
         background-size: cover;
       }
-      .background {
+      .backgroundlgn {
         width: 430px;
         height: 520px;
-        position: fixed;
+        position: absolute;
         transform: translate(-50%, -50%);
         left: 50%;
         top: 50%;
       }
+
       form {
-        height: 520px;
-        width: 400px;
+        height: 620px;
+        width: 920px;
         background-color: rgba(255, 255, 255, 0.13);
         position: absolute;
         transform: translate(-50%, -50%);
@@ -47,26 +57,28 @@
         backdrop-filter: blur(10px);
         border: 2px solid rgba(255, 255, 255, 0.1);
         box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
-        padding: 50px 35px;
+        padding: 5px 35px;
+        justify-content: center;
       }
+
       form * {
         font-family: "Poppins", sans-serif;
         color: #ffffff;
         letter-spacing: 0.5px;
         outline: none;
         border: none;
+        
       }
-
-      form h3 {
-        font-size: 32px;
+      form h4 {
+        font-size: 30px;
         font-weight: 500;
-        line-height: 42px;
+        line-height: 50px;
         text-align: center;
       }
 
       label {
         display: block;
-        margin-top: 30px;
+        margin-top: 20px;
         font-size: 16px;
         font-weight: 500;
       }
@@ -76,20 +88,19 @@
         width: 100%;
         background-color: rgba(255, 255, 255, 0.07);
         border-radius: 3px;
-        padding: 0 10px;
+        padding: 0 19px;
         margin-top: 8px;
-        margin-bottom: 30px;
         font-size: 14px;
         font-weight: 300;
       }
       ::placeholder {
         color: #e5e5e5;
       }
-
       button {
+        margin-top: 25px;
         width: 100%;
-        background-color: #ffffff;
-        color: #080710;
+        background-color: #ffffff !important;
+        color: #080710 !important;
         padding: 15px 0;
         font-size: 18px;
         font-weight: 600;
@@ -121,30 +132,54 @@
     </style>
   </head>
   <body>
-    <div class="background">
-      <form>
-        <h3>Login Here</h3>
-
-        <label for="Email">Email</label>
-        <input type="text" placeholder="Email" id="Email" />
-
-        <label for="password">Password</label>
-        <input type="password" placeholder="Password" id="password" />
-
-        <a href="Index.html"
-          ><div class="btn-container">
-            <button type="button" class="btn">Log In</button>
-          </div></a
-        >
-
-        <div style="padding-top: 9%; text-align: center">
-          <a href="signup.html"> SignUp </a>
-        </div>
-        <!-- <div class="social">
-          <div class="go"><i class="fab fa-google"></i> Google</div>
-          <div class="fb"><i class="fab fa-facebook"></i> Facebook</div>
-        </div> -->
-      </form>
+    <div class="backgroundlgn">
+      <div class="shape"></div>
+      <div class="shape"></div>
     </div>
+    <form>
+      <div class="p-3 py-4">
+        <h4>SIGN UP!</h4>
+        
+        <div class="row mt-2">
+          <div class="col-md-6">
+            <label class="labels">Nama Depan</label>
+            <input type="text" placeholder="Nama Depan" id="NamaDepan"/>
+
+          </div>
+          <div class="col-md-6">
+            <label class="labels">Nama Belakang</label>
+            <input type="text" placeholder="Nama Belakang" id="NamaBelakang"/>
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col-md-12">
+            <label class="labels">Alamat</label>
+            <input type="text" placeholder="Alamat" id="Alamat"/>
+          </div>
+          <div class="col-md-12">
+            <label class="labels">Email</label
+            ><input type="text" placeholder="Email" id="Email"/>
+          </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="col-md-6">
+              <label class="labels">Password</label>
+              <input type="text" placeholder="Password" id="Password"/>
+            </div>
+            <div class="col-md-6">
+              <label class="labels">Ulang Password</label>
+              <input type="text" placeholder="Ulang Password" id="ulang"/>
+            </div>
+          </div>
+          
+          <a href="login.html"
+          ><div class="btn-container">
+            <button type="button" class="btn">Sign Up</button>
+          </div></a>
+        </div>
+      </div>
+      
+    </form>
   </body>
 </html>
