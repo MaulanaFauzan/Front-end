@@ -124,7 +124,7 @@ body {
 
 .alamat {
   display: flex;
-  color: white;
+  color: rgb(255, 255, 255);
   gap: 3rem;
   justify-content: center;
 }
@@ -150,6 +150,8 @@ body {
 .map {
   border-radius: 4px;
   overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
 }
 
 .info-budaya {
@@ -186,10 +188,10 @@ body {
 }
 
 .btn-container > button {
-  padding: 6px 2rem;
-  background: #1a8fdd;
-  color: white;
-  border-radius: 5px;
+  padding: 10px 2rem;
+  background: #e8e8e8;
+  color: black;
+  border-radius: 3px;
   border: none;
 }
 
@@ -252,5 +254,3 @@ body {
   padding: 15px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
-
-/* modal content */
