@@ -543,3 +543,7 @@ button {
 .jc-content {
   justify-content: left;
 }
+
+h1.jargon {
+  font-family: "poppins";
+}
