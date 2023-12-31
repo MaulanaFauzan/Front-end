@@ -127,11 +127,10 @@
 }
 
 footer {
-  background-color: #777;
-  display: flex;
   text-align: center;
-  color: rgb(66, 63, 63);
-  justify-content: center;
+  padding: 3px;
+  background-color: rgb(57, 57, 57);
+  color: white;
 }
 
 .center {
@@ -546,4 +545,27 @@ button {
 
 h1.jargon {
   font-family: "poppins";
+}
+
+/* ------testimoni--------- */
+.carousel {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  padding-top: 2%;
+}
+
+/* Hide scrollbar */
+.carousel::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.card {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  width: 400px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
 }

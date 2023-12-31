@@ -95,61 +95,37 @@
         <div style="padding-top: 1%"></div>
       </div>
 
-      <!-- ----------Carousel---------- -->
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="col-sm-6">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
-          <div class="carousel-item">
-            <div class="col-sm-6">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
-          <div class="carousel-item">
-            <div class="col-sm-6">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
+      <!-- ----------testimoni---------- -->
+      <div class="carousel">
+        <div class="card">
+          <h6>Ahmad Muflih</h6>
+          <p>Web ini sangat membantu ketika saya sedang ingin solo travel</p>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+        <div class="card">
+          <h6>Fransisca Saras</h6>
+          <p>
+            GAMA telah membuat saya dapat menjelajahi tempat-tempat yang jauh.
+          </p>
+        </div>
+        <div class="card">
+          <h6>Reza Habibie</h6>
+          <p>Wow! Akhirnya saya bisa merasakan perjalanan tanpa batas!</p>
+        </div>
+        <div class="card">
+          <h6>Risma Kurniawan</h6>
+          <p>
+            Selain berwisata, Saya juga telah belajar banyak mengenai budaya!
+          </p>
+        </div>
+        <div class="card">
+          <h6>Jonathan Cloe</h6>
+          <p>Aku harap semakin banyak kota yang dapat aku eksplor</p>
+        </div>
+        <div class="card">
+          <h6>Reskiawan Noor</h6>
+          <p>Para tour guide disini sangat ramah dan bisa diandalkan!!!</p>
+        </div>
       </div>
-      
       <!-- -----animasi------- -->
       <section>
         <div
@@ -385,7 +361,10 @@
       </div>
     </div>
     <!-- Footer -->
-    <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+    <footer
+      class="text-center text-lg-start bg-body-tertiary text-muted"
+      data-bs-theme="dark"
+    >
       <!-- Section: Social media -->
       <section
         class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
@@ -411,11 +390,7 @@
               <h6 class="text-uppercase fw-bold mb-4">
                 <i class="fas fa-gem me-3"></i>GAMA
               </h6>
-              <p>
-                Here you can use rows and columns to organize your footer
-                content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.
-              </p>
+              <p>Nikmati jalan-jalan sendirian bersama TourGuide Virtualmu</p>
             </div>
             <!-- Grid column -->
 
@@ -449,7 +424,7 @@
                 <a href="#!" class="text-reset">A. Muh. Maulana Fausan</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">Novian Early</a>
+                <a href="#!" class="text-reset">Novian Early Pradanaputra</a>
               </p>
             </div>
             <!-- Grid column -->
@@ -457,7 +432,7 @@
             <!-- Grid column -->
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
               <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <h6 class="text-uppercase fw-bold mb-4">Alamat</h6>
               <p><i class="fas fa-home me-3"></i> indonesia, Bandung</p>
               <p>
                 <i class="fas fa-envelope me-3"></i>
@@ -472,19 +447,20 @@
         </div>
       </section>
       <!-- Section: Links  -->
-
-      <!-- Copyright -->
-      <div
-        class="text-center p-4"
-        style="background-color: rgba(0, 0, 0, 0.05)"
-      >
-        © 2021 Copyright:
-        <a class="text-reset fw-bold" href="https://mdbootstrap.com/"
-          >MDBootstrap.com</a
-        >
-      </div>
-      <!-- Copyright -->
     </footer>
     <!-- Footer -->
   </body>
+
+  <script>
+    var carousel = document.querySelector(".carousel");
+    var cards = document.querySelectorAll(".card");
+    var currentIndex = 0;
+
+    function scrollToNextCard() {
+      currentIndex = (currentIndex + 1) % cards.length;
+      carousel.scrollTo(cards[currentIndex].offsetLeft, 0);
+    }
+
+    setInterval(scrollToNextCard, 3000); // Scroll every 3 seconds
+  </script>
 </html>
